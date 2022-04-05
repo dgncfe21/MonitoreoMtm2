@@ -125,7 +125,9 @@ function AddMarkerConductor(data) {
     // Esta es la información del marker que se va a mostrar, el contenido acepta HTML
     var infowindow = new google.maps.InfoWindow({
         content: `<strong>Medidor: ${conductor.medidor}
-                    <p>Lampara ${conductor.lampara}</p>
+                    <p>Lampara: ${conductor.lampara}</p>
+                     <p>Capacidad: ${conductor.capacidad}</p>
+                     <p>FechaHora: ${conductor.fecha_hora}</p>
                     </strong>`
     });
     var uluru = { lat: parseFloat(conductor.latitud), lng: parseFloat(conductor.longitud) };
